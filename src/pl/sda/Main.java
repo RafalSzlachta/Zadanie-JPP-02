@@ -9,13 +9,13 @@ public class Main {
 }
 
     private static int minimum(int[] tab) {
-        int maxDigit = tab[0];
+        int minDigit = tab[0];
         for (int i = 0; i < tab.length; i++){
-            if (maxDigit>tab[i]){
-                maxDigit = tab[i];
+            if (minDigit>tab[i]){
+                minDigit = tab[i];
             }
         }
-        return maxDigit;
+        return minDigit;
     }
 
     private static int maximum(int[] tab) {
